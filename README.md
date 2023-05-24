@@ -1,5 +1,11 @@
 # EZbass User MIDI
-## Exemplo de código
+## Como usar
+
+Criar arquivo de txt com o mesmo nome do arquivo midi e colocar na mesma pasta, e salvar o arquivo de texto como .midchordinfo
+
+### Exemplo:
+* verso_1.mid
+* verso_1.midchordinfo
 
 ```
 ChordList {
@@ -11,7 +17,7 @@ ChordList {
 }
 ```
 
-### Como usar
+## Documentação
 
 * Note
 * Time
@@ -24,20 +30,20 @@ Time       | Time 0 4   | Tempo inical(beat) Tempo Final(beat)
 ChordParts ||
 
 ### Valores de nota
-Número | Nota
--------|-----
-0      | C
-1      | C#
-2      | D
-3      | D#
-4      | E
-5      | F
-6      | F#
-7      | G
-8      | G#
-9      | A
-10     | A#
-11     | B
+Número | Nota            | Grau
+-------|-----------------|---------
+0      | Tônica          | 1º Grau
+1      | #/b             |
+2      | Supertônica     | 2º Grau
+3      | #/b             |
+4      | Mediante        | 3º Grau
+5      | Subdominante    | 4º Grau
+6      | #/b             |
+7      | Dominante       | 5º Grau
+8      | #/b             |
+9      | Sobredominante  | 6º Grau
+10     | #/b             |
+11     | Sensível        | 7º Grau
 
 ### tipos de acordes
 Número | Tipo
@@ -46,6 +52,7 @@ Número | Tipo
 1      | Acorde Menor
 
 ## EXEMPLOS: 
+### Tom: C
 
 ```
 | C | G | Am | F |
@@ -54,14 +61,14 @@ Número | Tipo
 ```
 ChordList {
     Chord {
-        Note 1 1 0
+        Note 0 0 0
         Time 0 4
         ChordParts
     }
 }
 ChordList {
     Chord {
-        Note 7 7 1
+        Note 7 7 0
         Time 4 8
         ChordParts
     }
@@ -82,29 +89,37 @@ ChordList {
 }
 ```
 
+### Tom: E
 ```
-| C#m C#m/Bb | A          |
+| C#m C#m/Bb | A          | E          |
 ```
 
 ```
 ChordList {
     Chord {
-        Note 1 1 1
+        Note 9 9 1
         Time 0 2
         ChordParts
     }
 }
 ChordList {
     Chord {
-        Note 10 1 1
+        Note 7 7 1
         Time 2 4
         ChordParts
     }
 }
 ChordList {
     Chord {
-        Note 9 9 0
+        Note 5 5 0
         Time 4 8
+        ChordParts
+    }
+}
+ChordList {
+    Chord {
+        Note 0 0 0
+        Time 8 12
         ChordParts
     }
 }
