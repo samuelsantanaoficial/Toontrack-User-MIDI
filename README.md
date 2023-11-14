@@ -124,3 +124,22 @@ ChordList {
     }
 }
 ```
+
+# EZkey User MIDI
+## Como usar
+
+Criar arquivo de txt com o mesmo nome do arquivo midi e colocar na mesma pasta, e salvar o arquivo de texto como .midchordinfo
+
+### Exemplo:
+* verso_1.mid
+* verso_1.midchordinfo
+
+```
+ChordList {
+    Chord {
+        Note 0 0 0 
+        Time 0 4 
+        ChordParts
+    }
+}
+```
