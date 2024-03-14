@@ -1,0 +1,22 @@
+ChordList {
+    Chord {
+        Note 0 0 0
+        Time 0 4
+        ChordParts 
+    }
+    Chord {
+        Note 0 0 0
+        Time 4 8
+        ChordParts 
+    }
+    Chord {
+        Note 0 0 0
+        Time 8 12
+        ChordParts 
+    }
+    Chord {
+        Note 0 0 0
+        Time 12 16
+        ChordParts 
+    }
+}
