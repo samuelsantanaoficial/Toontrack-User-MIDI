@@ -1,0 +1,7 @@
+ChordList {
+    Chord {
+        Note 0 0 0
+        Time 0 4
+        ChordParts 
+    }
+}
